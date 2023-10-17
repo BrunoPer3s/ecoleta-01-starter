@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <img src="assets/logo.svg" alt="">
+      <a href="#">
+        <img src="assets/register.svg" alt="">
+        <span>Voltar para a home</span>
+      </a>
+    </header>
+    <form action="sumbit">
+      <h2>Cadastro do ponto de coleta</h2>
+
+      <section>
+        <h4>Dados da entidade</h4>
+        <div class="input">
+          <label for="entity">Nome da entidade</label>
+          <input name="entity" type="text">
+        </div>
+        <div class="sameline">
+          <div class="input">
+            <label for="address">Endereço</label>
+            <input name="address" type="text">
+          </div>
+          <div class="input">
+            <label for="number">Número</label>
+            <input name="number" type="text">
+          </div>
+        </div>
+        <div class="sameline">
+          <div class="input">
+            <label for="city">Cidade</label>
+            <input name="city" type="text">
+          </div>
+          <div class="input">
+            <label for="state">Estado</label>
+            <input name="state" type="text">
+          </div>
+        </div>
+      </section>
+    
+      <section>
+        <header>
+          <h4>Ítens de coleta</h4>
+          <span>Selecione um ou mais ítens abaixo</span>
+        </header>
+        <div id="grid">
+          <a class="item">
+            <img src="assets/lampadas.svg" alt="">
+            <span>Lâmpadas</span>
+          </a>
+          <a class="item">
+            <img src="assets/pilhas.svg" alt="">
+            <span>Pilhas e baterias</span>
+          </a>
+          <a class="item">
+            <img src="assets/papeis.svg" alt="">
+            <span>Papéis e papelão</span>
+          </a>
+          <a class="item">
+            <img src="assets/eletronicos.svg" alt="">
+            <span>Resíduos eletrônicos</span>
+          </a>
+          <a class="item">
+            <img src="assets/organicos.svg" alt="">
+            <span>Resíduos orgânicos</span>
+          </a>
+          <a class="item">
+            <img src="assets/oleo.svg" alt="">
+            <span>Óleo de cozinha</span>
+          </a>
+        </div>
+      </section>
+      <button type="submit">Cadastrar ponto de coleta</button>
+    </form>
+  </div>
+</body>
+</html>

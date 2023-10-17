@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #6C6C80;
+  --heading: #322153;
+  --bgColor: #F0F0F5;
+  --buttonColor: #34CB79;
+}
+
+body {
+  background: var(--bgColor);
+  height: 100vh;
+  font-family: Ubuntu, 'sans-serif';
+}
+
+span, p, strong {
+  font-family: Roboto;
+}
+
+#app {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 48px 1rem;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+header a span {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section h1 {
+  color: var(--heading);
+  font-size: 3.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+main section p {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.375rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+main section button {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: 21.75rem;
+  height: 4.5rem;
+  background-color: var(--buttonColor);
+  border-radius: 0.5rem;
+  border: 0;
+  cursor: pointer;
+}
+
+#searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  background: #2FB86E;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  height: 100%;
+} 
+
+main section button strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+#bgForm {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 900px) {
+  main>img {
+    display: none;
+  }
+
+  main {
+    display: block;
+    text-align: center;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+
+  
+
+  
+
+
+}
